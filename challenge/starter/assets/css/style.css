@@ -1,154 +1,169 @@
-:root{
-
-
+:root {
+  --font-setting: Chalkduster, fantasy;
+  --text-color: #a26360;
 }
-
 * {
-  box-sizing: border-box;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
-
 body {
-  line-height: 1.5;
   background-color: var(--primarycolor);
-  font-family:Chalkduster, fantasy;
-}
+  font-family: var(--font-setting);
+  box-sizing: border-box;
+  background-color: rgb(244, 229, 229, 0.4);
 
-header {
+}
+  
+/*configurate my-profile and nav search*/
+.navigation {
   display: flex;
-  width: 100%;
-  color: var(--primarycolor);
   height: 150px;
-  background-color:#bdd1c5;
-}
-
-nav{
-display: flex;
-justify-content: flex-end;
-}
-nav a{
-  display: flex;
-  align-items: center;
-}
-
-
-#profile-pic {
-  width: 30%;
-  height: 30%;
-  border-radius: 50%;
-  margin-left: 5px;
-  margin-right: 50px;
+  background-color: #bdd1c5;
 }
 
 h1 {
   color: white;
-  margin-top:20%;
-  font-family:Chalkduster, fantasy;
+  margin-top: 40px;
 }
-
 nav {
-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
 }
 
-a {
+nav a {
+  display: flex;
+  align-items: center;
   padding: 10px;
   text-decoration: none;
-  font-size: 20px;
   color: white;
-  font-family:Chalkduster, fantasy;
+}
+/*first section*/
+.hero-banner {
+  text-align: center;
+  height: 150px;
+  color:var(--text-color);
+  background-color: rgb(244, 229, 229);
+}
+.hero-banner p {
+  float: right;
+  margin-top: 50px;
+  height: 100;
+}
+#img{
+  margin-left: 20px;
+  margin-top: 10px;;
+  width: 100%;
+  height: 50%;
+}
+/*configurate pic of me*/
+#profile-pic {
+  border-radius: 50%;
+  width: 80%;
 }
 
+/*configurate the main page*/
 .page-wrapper {
   display: grid;
-  width: 100%;
-  grid-template-columns: 15% 40% 40%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 300px 400px 300px 300px 100px;
   grid-template-areas:
     "aboutme description description"
     "work first-block first-block"
     "work second-block third-block"
     "work fourth-block fifth-block"
     "contactme icons icons";
-}
-
-#aboutme {
-  grid-area: aboutme;
-  margin-bottom: 3px solid #bdd1c5;
  
 }
+
+/*This part has all the div of the projects section*/
+.main-page {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-size: contain;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+/*p is the description of the images*/
+.sub-message p {
+  color: black;
+  background-color: #bdd1c5;
+  text-align: center;
+  height: 30px;
+}
+h2 {
+  color: var(--text-color);
+  float: right;
+  padding: 10px;
+}
+
+/*sidebar*/
+#aboutme,
+#work,
+#contactme {
+  border-right: 3px solid #a26360;
+  margin-bottom: 10px;
+}
+#aboutme {
+  grid-area: aboutme;
+}
+/*description of mysel*/
 #description {
   grid-area: description;
-  margin-top: 3%;
- display: flex;
- margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* @media only screen and (max-width: 768px)
+#description {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 3vw;
+} */
+#about{
+  gap:40px;
+  width: 100%;
+  display: flex;
+  color: #a26360;
+  gap: 30px;
+  margin-left: 20px;
 }
 
 #work {
   grid-area: work;
 }
-/* #first-block a,
-#second-block a,
-#third-block a,
-#fourth-block a,
-#fifth-block a{
-height: 10%;
-background-color:#bdd1c5;;
-margin-right: 10px;
-width: 100%;
-margin-top:500px;
-text-align: center;
-color: black;
-
-} */
-
-
+/*x-blocks are the grid area*/
 #first-block {
   grid-area: first-block;
-  height: 600px;
   background-image: url("../../images/firstwebsite.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  background-color:#bdd1c5;
-  transition: transform 0.3s ease;
-  margin-bottom: 40px;
-}
-.first-project{
-  display: flex;
-  align-items: end;
-}
 
-.furniture{
-background-color: #bdd1c5;
-height: 40px;
-text-align: center;
-width: 100%;
-
+}
+#second-block {
+  grid-area: second-block;
+  background-image: url("../../images/pre-work.png");
 }
 #third-block {
   grid-area: third-block;
-  height: 400px;
+  background-image: url("../../images/jakes.eatery.png");
 }
-
 #fourth-block {
   grid-area: fourth-block;
-  height: 400px;
-  margin-bottom: 10px;
+  background-image: url("../../images/kudox.png");
 }
-
 #fifth-block {
   grid-area: fifth-block;
-  height: 400px;
-  margin-bottom: 10px;
 }
-
+/*foot*/
 #contactme {
   grid-area: contactme;
-  width: 100%;
 }
+/*icons for the foot*/
 #icons {
   grid-area: icons;
   width: 100%;
@@ -158,68 +173,57 @@ width: 100%;
   justify-content: center;
   justify-content: center;
   align-items: end;
-  margin-bottom: 10px;
 }
 #linkedin,
 #github,
-#email{
+#email {
   width: 40px;
   height: 40px;
+  padding: 10px;
 }
 
-.hero-banner {
+@media (max-width: 800px){
+  .body {
+    width: 100%;
+  }
+}
+
+/* 
+@media only screen and (max-width: 768px){
+.profile-pic {
+    width: 40vw;
+    padding: 5vw 0 2vw;
+
+}} */
+
+@media (max-width: 650px){
+.page-wrapper {
   display: flex;
-  /* border-bottom: 3px #a26360 solid; */
-  height: 100px;
-  width: 100%;
-  justify-content: center;
-  align-items: end;
-  color:#a26360;
-  background-color: rgb(244, 229, 229);
+  flex-direction: column;
+  }}
+@media(max-width: 650px) {
+  .sidebar{
+    display: none;
+  }
+}
+@media (max-width: 950px){
+.description{
+display:inline-block;
+}
 }
 
-
-.hero-banner h2 {
-  float: right;
+@media (max-width: 768px){
+  .navigation{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+  }
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-left: 20px;
-}
-.main-page{
-height: fit-content;
-padding: 10px;
-position: relative;
-width: 100%;
-}
-
-#aboutme p, #work p, #contactme p {
-  font-size: 26px;
-  color:#a26360;
-  float: right;
-}
-#aboutme, #work, #contactme{
-  font-size: 26px;
-  float: right;
-  border-right: 3px solid #a26360;
-  margin-bottom: 10px;
-  height: 100%;
-  background-color: rgb(244, 229, 229);
-}
-p {
-  margin: 0;
-  padding: 0px;
-  font-size: 16px;
-  font-family:Chalkduster, fantasy;
-  color: #a26360;
-}
-
-#icons p{
-  text-align: center;
+@media (max-width: 768px){
+  .nav{
+    width: 100px;
+  }
 }
