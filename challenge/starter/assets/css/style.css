@@ -21,15 +21,14 @@ body {
   display: flex;
   justify-content: space-between;
   height: 100px;
-
-  /* background-color: #bdd1c5; */
+  background-attachment: fixed;
 }
 
 h1 {
   margin-top: 40px;
   margin-left: 20px;
   color: var(--text-color);
-  font-family: Chalkduster, fantasy; ;
+  font-family: Chalkduster, fantasy; 
 }
 h3 {
   float: right;
@@ -51,6 +50,8 @@ nav a {
 .my-profile{
   width: 60%;
 }
+
+h1:hover,
 a:hover {
   color: #a26360;
   border-radius: 10%;
@@ -85,6 +86,8 @@ a:hover {
   border-radius: 50%;
   width: 70%;
   padding: 10px;
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 /*configurate the main page*/
@@ -158,12 +161,12 @@ a:hover {
 }
 
 #about {
-  gap: 40px;
   width: 100%;
   display: flex;
   color: var(--text-color);
   gap: 20px;
   margin-left: 20px;
+  text-align: justify;
 }
 
 #work {
@@ -219,10 +222,14 @@ a:hover {
   }
 }
 @media (max-width: 650px) {
-  .sidebar {
-    display: none;
+  #profile-pic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 50%;
+    width: 30%;
   }
-}
+  }
 @media (max-width: 950px) {
   .description {
   }
@@ -232,9 +239,12 @@ a:hover {
   .navigation {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-evenly;
-    padding: 10px;
     align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 40px;
+    align-items: center;
+    height: 70px;
   }
 }
 
@@ -267,6 +277,25 @@ a:hover {
   }
 }
 @media (max-width: 678px){
-
-
+  .my-profile{
+    width: 90%;
+    font-size: small;
+  }
 }
+
+@media (max-width: 678px){
+#about {
+  width: 100%;
+  display: flex;
+  color: var(--text-color);
+  gap: 20px;
+  margin-left: 20px;
+  line-height: 1.2;
+}}
+@media (max-width: 678px){
+.sub-message{
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 5px;
+  width: 30%;
+}}
