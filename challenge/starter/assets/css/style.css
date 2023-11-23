@@ -64,7 +64,7 @@ a:hover {
   background-image: url(../../images/web.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size:cover;
   opacity:0.2;
 }
 
@@ -76,10 +76,11 @@ a:hover {
 }
 
 #img {
-  margin-left: 20px;
+  margin-left: 3%;
   margin-top: 5px;
   width: 100%;
-  height: 50%;
+  height: 50hv;
+  width: 70%;
 }
 /*configurate pic of me*/
 #profile-pic {
@@ -88,6 +89,7 @@ a:hover {
   padding: 10px;
   margin-left: 20px;
   margin-top: 5px;
+  width: 100%;
 }
 
 /*configurate the main page*/
@@ -299,3 +301,25 @@ a:hover {
   margin-left: 5px;
   width: 30%;
 }}
+@media (max-width: 678px){
+#img {
+  float: right;
+  margin-top: 5px;
+  width: 50%;
+  height: 50%;
+}}
+@media (max-width: 678px){
+  #profile-pic {
+    width: 70%;
+    height: 50%;
+
+  }}
+
+
+
+  @media (max-width: 678px){
+  .sidebar h3{
+    margin-top:3px;
+    height: fit-content;
+    float: left;
+  }}
