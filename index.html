@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,115 +8,111 @@
   <title>Raphaela Gil - Front End Web- Developer</title>
   <link rel="icon" type="image/x-icon" href="./challenge/starter/images/RG-3.png">
   <link rel="stylesheet" href="./challenge/starter/assets/css/style.css" />
+  <title>Raphaela Gil - Front End Web- Developer</title>
 </head>
 
 <body>
-  <!-- main logo / nav -->
+  <!-- Here is our main header that is used across all the pages of our website -->
   <header>
-    <div class="navigation">
-      <div class="my-profile">
-        <h1>RAPHAELA GIL</h1>
-      </div>
-
-      <nav class="nav-bar">
-        <a href="#aboutme">about me</a>
-        <a href="#work">work</a>
-        <a href="#contactme">contact me</a>
-        <a href="../starter/resume.html">resume</a>
-      </nav>
-    </div>
+    <h1>RAPHAELA GIL</h1>
+    <nav>
+      <!-- Some links to link and navigate through a website. -->
+      <a href="#aboutme">about me</a>
+      <a href="#work">work</a>
+      <a href="#contactme">contact me</a>
+      <a href="./challenge/starter/Raphaela do Amaral Gil _ Web.pdf">resume</a>
+    </nav>
   </header>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <!-- <div id="fun-part">
-     <p>
-        <b>Welcome to my
-        < coder /> world!
-      </b></p> -->
-    </div> 
-  </section>
+  <!--This section contain a background picture that dive the header from main section-->
+  <div class="hero-banner"></div>
 
-  <main class="page-wrapper">
-
-    <div class="sidebar" id="aboutme">
-      <div id="img">
+  <!-- Here is our page's main content -->
+  <main>
+    <!-- It contains three sections -->
+    <section class="section" id="aboutme">
+      <div id="myself">
         <img src="./challenge/starter/images/Me.jpeg" id='profile-pic' alt="myself-profile"></a>
+        <h2>About me</h2>
       </div>
-      <br>
-      <h3>About me</h3>
-    </div>
-
-    <!-- grid css section -->
-    <div id="description">
-      <div id="about">
-        <p>Hey there! &#128075; I'm diving into the world of <b>web development</b> at Edx Bootcamp in London. Believe it or
+      <div class="description">
+        <!-- Description about myself -->
+        <p>Hey there! &#128075; I'm diving into the world of <b>web development</b> at Edx Bootcamp in London. Believe
+          it or
           not,
           I used
-          to play with chemicals before this—mixing stuff up and watching the <b>magic happen</b>. But now, I'm swapping test
+          to play with chemicals before this—mixing stuff up and watching the <b>magic happen</b>. But now, I'm swapping
+          test
           tubes 🧪for code 💻 and loving it!
+          The way web developers work their magic has always <b>fascinated me</b>.
         <p>
 
-        <div>
-          <p>
-            The way web developers work their magic has always <b>fascinated me</b>. So, I got curious and jumped headfirst
-            into
-            this coder universe. Turns out, turning ideas into cool websites feels like creating secret potions!
+        <p>
+          So, I got curious and jumped headfirst
+          into this coder universe. Turns out, turning ideas into cool websites feels like creating secret potions!
+          I've got this knack for solving puzzles and making things easier for folks. Thinking through problems and
+          making
+          tech stuff that people enjoy using — it's like turning work into a <b>fun game!</b>
+        </p>
+      </div>
+    </section>
+    <!--section that show my portfolio-->
+    <section class="section" id="work">
+      <div id="work-title">
+        <h2>Work</h2>
+      </div>
 
-            I've got this knack for solving puzzles and making things easier for folks. Thinking through problems and
-            making
-            tech stuff that people enjoy using—it's like turning work into a <b>fun game!</b></p>
+      <div id="main">
+        <div class='main-page' id="first-block" onclick="window.open('https://raphagil.github.io/furniture-project/')">
+          <div class="sub-message">
+            <p>Furniture Business</p>
+          </div>
+        </div>
+
+        <div class='main-page' id="second-block"
+          onclick="window.open('https://raphagil.github.io/prework-study-guide/')">
+          <div class="sub-message">
+            <p>Pre-work</p>
+          </div>
+        </div>
+
+        <div class='main-page' id="third-block" onclick="window.open('https://raphagil.github.io/jakes-bakery/')">
+          <div class="sub-message">
+            <p>Jakes Bakery</p>
+          </div>
+        </div>
+
+        <div class='main-page' id="fourth-block" onclick="window.open('https://raphagil.github.io/business-kudox/')">
+          <div class="sub-message">
+            <p>On process..</p>
+          </div>
+        </div>
+
+        <div class='main-page' id="fifth-block" onclick="window.open('')">
+          <div class="sub-message">
+            <p>Coming soon..</p>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="sidebar" id="work">
-      <h3>Work</h3>
-    </div>
-    <div class='main-page' id="first-block" onclick="window.open('https://raphagil.github.io/furniture-project/')">
-      <div class="sub-message">
-        <p>Furniture Business</p>
+    </section>
+    <!--section with may details to contact me-->
+    <section class='section' id="contactme">
+      <div id="contact">
+        <h2>Contact me</h2>
       </div>
-    </div>
-
-    <div class='main-page' id="second-block" onclick="window.open('https://raphagil.github.io/prework-study-guide/')">
-      <div class="sub-message">
-        <p>Pre-work</p>
+      <div id="online">
+        <a href="https://uk.linkedin.com/in/raphaela-do-amaral-gil-0a9bb945">
+          <img src='./challenge/starter/images/linkedin.png' alt='linkedin logo' id="linkedin"></a>
+        <a href="https://github.com/RaphaGil">
+          <img src='./challenge/starter/images/github.png' alt='github logo' id="github"></a>
+        <a href="mailto:raphaela.gil@yahoo.com">
+          <img src='./challenge/starter/images/email.png' alt='email logo' id="email"><a>
       </div>
-    </div>
-
-    <div class='main-page' id="third-block" onclick="window.open('https://raphagil.github.io/jakes-bakery/')">
-      <div class="sub-message">
-        <p>Jakes Bakery</p>
-      </div>
-    </div>
-
-    <div class='main-page' id="fourth-block" onclick="window.open('https://raphagil.github.io/business-kudox/')">
-      <div class="sub-message">
-        <p>Kudox Business</p>
-      </div>
-    </div>
-
-    <div class='main-page' id="fifth-block" onclick="window.open('https://raphagil.github.io/business-kudox/')">
-      <div class="sub-message">
-        <p>Coming soon..</p>
-      </div>
-    </div>
-    <div class="sidebar" id="contactme">
-      <h3>Contact me</h3>
-    </div>
-    <!-- footer -->
-    <div class='footer' id="icons">
-      <a href="https://uk.linkedin.com/in/raphaela-do-amaral-gil-0a9bb945">
-        <img src='./challenge/starter/images/linkedin.png' alt='linkedin logo' id="linkedin"></a>
-      <a href="https://github.com/RaphaGil">
-        <img src='./challenge/starter/images/github.png' alt='github logo' id="github"></a>
-      <a href="mailto:raphaela.gil@yahoo.com">
-        <img src='./challenge/starter/images/email.png' alt='email logo' id="email"></a>
-      <!-- <p>Developed and designed with love ❤️ </p> -->
-    </div>
+    </section>
   </main>
-
+  <footer>
+    <p>©Copyright 2023 by Raphaela Gil. Developed and designed with love ❤️ </p>
+  </footer>
 </body>
 
 </html>
