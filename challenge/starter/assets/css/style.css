@@ -52,6 +52,10 @@ a:hover {
   background-size: cover;
   opacity: 0.2;
 }
+
+.project-block:hover{
+  transform:scale(1.05);
+}
 /*about me*/
 
 #myself {
@@ -85,7 +89,7 @@ h2 {
 }
 
 /*projects container*/
-.section {
+.projects-section{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -98,7 +102,7 @@ h2 {
   text-align: center;
 }
 
-#main {
+#projects {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 400px 500px 500px;
@@ -111,7 +115,7 @@ h2 {
   width: 80%;
   color: var(--text-color);
 }
-.main-page {
+.project-block {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -166,7 +170,7 @@ h2 {
   width: 20%;
   border-right: 2px solid rgb(125, 123, 123);
 }
-#online {
+#icons {
   width: 80%;
   text-align: center;
 }
@@ -227,7 +231,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .section {
+  .projects-section {
     display: flex;
     flex-direction: column;
     padding: 2vw 3vw;
@@ -263,7 +267,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  #main {
+  #projects {
     display: grid;
     width: 100%;
     margin: 20px;
@@ -274,7 +278,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .main-page {
+  .project-block {
     margin: 20px;
     width: auto;
     padding: 2px;
